@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  overflow: hidden;
+}
+
+.card {
+  box-shadow: 1px -1px 46px -2px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 1px -1px 46px -2px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 1px -1px 46px -2px rgba(0, 0, 0, 0.28);
+  border-radius: 15px;
+  width: 20em;
+  height: 22em;
+  background: #fff;
+  position: relative;
+}
+
+.perfil {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.perfil-dscr {
+  width: 100%;
+  height: 8em;
+  position: relative;
+  /* background-color: green; */
+  background-image: url("./images/bg-pattern-card.svg");
+  border-radius: 15px 15px 0 0;
+}
+
+.perfil-dscr img {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+    MAIN
+*/
+
+.name {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+}
+
+.name-ctn {
+  text-align: center;
+}
+
+.name-ctn h1 {
+  font-weight: 700;
+}
+
+.name-ctn span {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+/* 
+    FOOTER
+*/
+
+.footer {
+  width: 100%;
+  height: 5.8em;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 15px 15px;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-inf {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-inf {
+  text-align: center;
+}
+
+.card-inf h1 {
+  font-weight: 700;
+}
+
+.card-inf span {
+  font-size: 12px;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 2px;
+}
+
+/* 
+    background
+*/
+
+.bg {
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.bg-- {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  position: relative;
+}
+
+.img-top {
+  position: absolute;
+  left: 15%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.img-btm {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+}
+
+
+@media screen and ( max-width:600px ){
+    .img-top {
+        position: absolute;
+        background-repeat: no-repeat;
+        left: -40%;
+        top: 0%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .img-btm {
+        position: absolute;
+        left: 30%;
+        top:  50%;
+      }
+}
