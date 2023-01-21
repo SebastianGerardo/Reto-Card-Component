@@ -1,5 +1,5 @@
 import bgTop from '../images/bg-pattern-top.svg'
-import bgBottom from '../images/bg-pattern-Bottom.svg'
+import bgBottom from '../images/bg-pattern-bottom.svg'
 
 const BgPattern = () => {
     return (
